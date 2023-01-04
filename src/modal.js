@@ -18,7 +18,7 @@ const Modal = (props) => {
                 <p className="closeIcon" onClick={handleCloseClick}>x</p>
                 <div className="topSection">
                     <img src={props.country.flags.png} width="30px" alt={`Country Flag`} />
-                    <img src={props.country.coatOfArms.png} width="30px" alt={`Country Flag`} />
+                    <img src={props.country.coatOfArms.png} width="30px" alt={`Coat of Arms`} />
                     <div className="whiteGradient"></div>
                 </div>
                 <div className="bottomSection">                    
