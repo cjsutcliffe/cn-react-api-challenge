@@ -27,6 +27,8 @@ const Modal = (props) => {
                     <p>Capital City: {props.country.capital}</p>
                     {/* toLocaleString('en') adds comma seperators */}
                     <p>Population: {props.country.population.toLocaleString('en')}</p>
+                    <p>Continent: {props.country.continents}</p>
+                    <p>Top Level Domain: {props.country.tld}</p>
                     <p>In {props.country.name.common} they drive on the {props.country.car.side} hand side of the road</p>
                     <a style={{display: "mapButton"}} href={props.country.maps.googleMaps} target="_blank" rel="noreferrer"> Click for map</a>
                 </div>

@@ -19,7 +19,9 @@ const App = () => {
         }
 
         const data = await response.json();
-        //sorts api data alphabettically by country common name and sets this as the countries
+        //pulls data but does not sort it alphabetically
+        // setCountries(data)
+        //sorts api data alphabetically by country common name and sets this as the countries
         setCountries(data.sort((a, b) => a.name.common.localeCompare(b.name.common)))
       } catch (error) {
         setErrorMsg("Well this is embarasing, something went wrong...")
