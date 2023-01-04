@@ -1,38 +1,153 @@
-.App {
-  text-align: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.pageWrapper {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: antiquewhite;
+  font-family: 'Roboto', sans-serif;
+}
+
+.pageWrapper img {
+  width: 300px;
+}
+
+.sortWrapper {
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sortWrapper select {
+  margin: 0 10px;
+}
+
+.imageWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.imageWrapper img {
+  width: 200px;
+  margin: 10px;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.imageWrapper img:hover {
+  width: 210px;
+  margin: 2px 5px;
+}
+
+.modalBackground {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  backdrop-filter: blur(4px);
 }
 
-.App-link {
-  color: #61dafb;
+.modalBox {
+  background-color:antiquewhite;
+  display: flex;
+  width: 600px;
+  height: 500px;
+  flex-direction: column;
+  border-radius: 10px;
+  padding: 8px;
+  overflow: scroll;
+  position: relative;
+  font-family: 'Roboto', sans-serif;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.topSection{
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.topSection img{
+  /* width: 50%; */
+  display: block;
+  max-width:50%;
+  max-height: 150px;
+  
+  width: auto;
+  height: auto;
+  padding: 20px;
+}
+.topSection::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 4px;
+  right: 0;
+  height: 40px;
+}
+
+.bottomSection {
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: center;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  font-size: c40px;
+  font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+    
+    text-align: center;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+}
+
+h2:hover {
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
+p {
+  font-weight: 300;
+  text-align: center;
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.closeIcon {
+  color: black;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 10;
+  margin: 10px;
+  font-size: 20px;
+  font-weight: 900;
+  text-shadow: 0px 0px 10px white;
+  cursor: pointer;
+}
+
+.footer {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+.countryGrid:hover {
+  background-color:rgb(253, 215, 165);
+  font-size: 18px;
+  border-radius: 10px;
+  cursor: pointer;
 }
