@@ -63,11 +63,13 @@ const App = () => {
             
 
             <div className="footer">
-            Chris Sutcliffe <></>
+            Chris Sutcliffe 2023
             <br></br>
             <a onclick href="https://github.com/cjsutcliffe/cn-react-api-challenge">GitHub</a>
             <br></br>
-            <code onclick href="https://restcountries.com/v3.1/all/">API endpoint: https://restcountries.com/v3.1/all/</code>
+            <a onclick href="https://restcountries.com/">API Documentation</a>
+            <br></br>
+            <a onclick href="https://restcountries.com/v3.1/all/">API endpoint: https://restcountries.com/v3.1/all/</a>
             </div>
 
       </div>
